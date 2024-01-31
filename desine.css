@@ -1,0 +1,48 @@
+body {
+    width: 95vw;
+    background: linear-gradient(#304352, #d7d2cc);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+    padding: auto;
+    flex-direction: column;
+}
+
+.content {
+    height: 80vh;
+    border: 2px solid black;
+    width: 90vw; /* Adjusted width for smaller screens */
+    max-width: 250px; /* Maximum width for larger screens */
+    display: flex;
+    overflow: hidden;
+}
+
+.nav button {
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: 1.5;
+}
+
+.gallery {
+    width: 90vw; /* Adjusted width for smaller screens */
+    max-width: 300px; /* Maximum width for larger screens */
+}
+
+@media screen and (min-width: 768px) {
+    /* Adjust styles for screens wider than 768 pixels */
+    .content {
+        width: 60vw;
+    }
+
+    .gallery {
+        width: 40vw;
+    }
+}
